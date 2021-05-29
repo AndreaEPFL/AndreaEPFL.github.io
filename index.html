@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Welcome to Data Visualization</title>
+	<meta name="description" content="Welcome to Data Visualization">
+	<meta name="author" content="K Lis">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="title-row">
+	<h1> European energy consumption </h1>
+</header>
+
+
+<div class = "content-row">
+	<button id ="capita_button" class="button">
+		<img src="images/person.svg" alt="Per capita button">
+	</button>
+
+	<div class = "content-column">
+		<div id="map" class="map"></div>
+	</div>
+	
+	<div class = "content-column">
+		<div id="graph">
+			<div id="graph" class="graph"></div>
+		</div>
+	</div>
+</div>
+
+<div id="timeline" class="timeline">
+</div>
+
+<script src="lib/d3.min.js"></script>
+<script src="lib/leaflet.js"></script>
+<link rel="stylesheet" href="lib/leaflet.css">
+<script src="periodic_plot.js"></script>
+<script src="map.js"></script>
+<script src="timeline.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
